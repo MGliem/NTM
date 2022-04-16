@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-inline: auto;
+}
+
+form > label {
+  margin-block-start: 1rem;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
