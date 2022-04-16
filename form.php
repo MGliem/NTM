@@ -25,7 +25,7 @@
             $uploadDir = 'uploads/';
             $randName = uniqid(rand(0, 100), true) . basename($_FILES['photo-id']['name']);
             $uploadFile = $uploadDir . $randName;
-            $authorizedMimes = ['image/jpeg','image/png', 'image/webp'];
+            $authorizedMimes = ['image/jpeg','image/png', 'image/webp', 'image/gif'];
             $maxFileSize = 1000000;
 
             if (!in_array(mime_content_type($_FILES['photo-id']['tmp_name']), $authorizedMimes)) {
